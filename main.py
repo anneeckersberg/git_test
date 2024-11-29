@@ -6,6 +6,7 @@ import random
 
 screen = Screen()
 screen.setup(500,400) #resize window, center of x and y is always 0,0
+screen.colormode(255)
 
 user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
 
@@ -26,6 +27,7 @@ for i in range(10):
     obstacle = Turtle("square")
     obstacle.penup()
     obstacle.goto(random.randint(-250, 250), random.randint(-200, 200))
+    obstacle.color(random.randint(1, 255), random.randint(1, 255), random.randint(1, 255))
 
 if user_bet: #means if user_bet exists
     game_on = True
