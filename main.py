@@ -22,6 +22,12 @@ for i in range(6):
     t.color(colors[i])
     turtles_list.append(t)
 
+
+for i in range(10):
+    obstacle = Turtle("square")
+    obstacle.penup()
+    obstacle.goto(random.randint(-250, 250), random.randint(-200, 200))
+
 if user_bet: #means if user_bet exists
     game_on = True
 
