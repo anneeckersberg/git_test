@@ -14,6 +14,7 @@ turtles_list = []
 
 game_on = False
 
+#making the turtles
 for i in range(6):
     t = Turtle("turtle")
     t.penup()
